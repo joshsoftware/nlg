@@ -1,0 +1,84 @@
+{ "defaults":
+  { "tense": "present",
+    "verb": "be",
+    "pronoun": "he", 
+    "voice": "active",
+    "aspect": "habitual"
+  },
+
+  "subjects":
+    {  
+      "subject": "Sricharan",
+      "objects": [
+      { "object" : "location",
+        "value": "aundh",
+        "specifications":
+        {
+        "verb": "live",
+        "preposition": "in",
+        "tense": "past", 
+        "coordinated": true,
+        "coordination_phrase": "and"}
+      },
+      
+       
+      { "object": "age", 
+        "value": "19",
+        "specifications": 
+        {"complement": "years old"
+        }
+      },
+     
+      
+      { "object": "workplace",
+        "value": "Josh Software",
+        "specifications":
+        {
+        "verb": "work",
+        "preposition": "in",
+        "coordinated": true,
+        "coordination_phrase": "and"}
+      },
+        
+      
+      { "object": "interest",
+        "value": ["music", "football", "movies"],
+        "specifications":
+        {
+        "verb": "like",
+        "coordinated": true,
+        "coordination_phrase": "and" }
+      },
+      
+      
+      { "object": "achievement",
+        "value": "xyz", 
+        "specifications":
+        {
+        "verb": "achieve",
+        "aspect": "perfect",
+        "coordinated": true,
+        "coordination_phrase": "and"}
+      },
+     
+      
+      { "object": "height",
+        "value": "185",
+        "specifications":
+        {
+        "complement": "cm tall"}
+      },
+   
+      
+      { "object": "weight",
+        "value": "70",
+        "specifications":
+        {
+        "verb": "weigh",
+        "complement": "kg"}
+      }
+     ]
+    }
+ 
+}
+

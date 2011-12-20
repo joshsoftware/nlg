@@ -1,0 +1,2 @@
+class NlgException < Exception
+end

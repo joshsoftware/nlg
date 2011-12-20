@@ -1,0 +1,59 @@
+{ "defaults":
+  { "tense": "present",
+    "verb": "have",
+    "pronoun": "it", 
+    "voice": "active",
+    "aspect": "habitual",
+    "preposition": "of"
+  },
+
+  "subjects":
+    { 
+      "subject": "Pune",
+      "objects": [
+      { "object" : "population",
+        "value": "57841284790",
+        "specifications":
+        {
+        }
+      },
+      
+       
+      { "object": "rainfall",
+        "value": "198",
+        "specifications": 
+        {
+        "complement": "mm"}
+      },
+     
+      
+      { "object": "high temperature",
+        "value": "45",
+        "specifications": {
+       		 "complement": "°C"
+				}
+      },
+        
+      
+      { "object": "low temperature",
+        "value": "20",
+        "specifications":
+        {
+        "complement": "°C" }
+      },
+      
+      
+      
+      { "object": "forts",
+        "value": ["sinhgad", "lohgad"],
+        "specifications":
+        {
+        "preposition": "named"
+        }
+      }
+     ]
+    }
+  
+ 
+}
+

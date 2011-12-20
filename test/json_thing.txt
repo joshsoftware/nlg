@@ -1,0 +1,57 @@
+{ "defaults":
+  { "tense": "present",
+    "verb": "be",
+    "pronoun": "it", 
+    "voice": "active",
+    "aspect": "habitual"
+  },
+
+  "subjects":
+    { 
+      "subject": "ABCD",
+      "objects": [
+      { "object" : "type",
+        "value": "bottle",
+        "specifications":
+        {"preposition": "a"
+        }
+      },
+      
+       
+      { "object": "height",
+        "value": "123",
+        "specifications": 
+        {
+        "complement": "mm high."}
+      },
+     
+      
+      { "object": "dimension",
+        "value": "12*2*3",
+        "specifications":
+        {"verb": "have"
+        }
+      },
+        
+      
+      { "object": "weight",
+        "value": "20",
+        "specifications":
+        {"verb": "weigh",
+        "complement": "gm" }
+      },
+      
+      
+      
+      { "object": "cost",
+        "value": "123",
+        "specifications":
+        {"verb": "cost",
+        "complement": "rupees."
+        }
+      }
+     ]
+    }
+ 
+}
+
