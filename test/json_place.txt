@@ -16,8 +16,7 @@
           "specifications":
           {
    
-          },
-          "conjugated_with": ["rainfall"]
+          }
         },
       
        
@@ -25,8 +24,8 @@
           "value": "198",
           "specifications": 
           {
-          "complement": "mm"},
-          "conjugated_with" : ["low temperature"]
+          "complement": "mm"}
+          
         },
      
        
@@ -55,7 +54,8 @@
           {
           "preposition": "named"
           },
-          "conjugated_with": ["low temperature", "rainfall"]
+          "conjugated_with": ["high temperature", "low temperature", "rainfall"]
+          
         }
      }
     }
