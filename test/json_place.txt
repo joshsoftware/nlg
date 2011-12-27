@@ -10,48 +10,54 @@
   "subjects":
     { 
       "subject": "Pune",
-      "objects": [
-      { "object" : "population",
-        "value": "57841284790",
-        "specifications":
-        {
-        }
-      },
+      "objects": {
+        "population":{
+          "value": "57841284790",
+          "specifications":
+          {
+   
+          },
+          "conjugated_with": ["rainfall"]
+        },
       
        
-      { "object": "rainfall",
-        "value": "198",
-        "specifications": 
-        {
-        "complement": "mm"}
-      },
+        "rainfall": {
+          "value": "198",
+          "specifications": 
+          {
+          "complement": "mm"},
+          "conjugated_with" : ["low temperature"]
+        },
      
+       
+        "high temperature": {
+          "value": "45",
+          "specifications": {
+         		 "complement": "°C"
+		  		},
+          "conjugated_with": ["low temperature"]
+        },
+         
       
-      { "object": "high temperature",
-        "value": "45",
-        "specifications": {
-       		 "complement": "°C"
-				}
-      },
-        
-      
-      { "object": "low temperature",
-        "value": "20",
-        "specifications":
-        {
-        "complement": "°C" }
-      },
+        "low temperature": {
+          "value": "20",
+          "specifications":
+          { 
+          "complement": "°C" },
+          "conjugated_with": ["high temperature", "low temperature", "rainfall"]
+        },
       
       
       
-      { "object": "forts",
-        "value": ["sinhgad", "lohgad"],
-        "specifications":
-        {
-        "preposition": "named"
+        "forts": {
+          "value": ["sinhgad", "lohgad"],
+          "specifications":
+          {
+          "preposition": "named"
+          },
+          "conjugated_with": ["low temperature", "rainfall"]
         }
-      }
-     ]
+     }
     }
   
  

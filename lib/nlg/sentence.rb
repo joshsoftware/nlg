@@ -6,7 +6,6 @@ module Nlg
   
   	def initialize(args = {})
   		specifications = args[:specifications]
-  
       @verb = specifications["verb"] || (raise NlgException.new "Verb is nil") 
       @tense = specifications["tense"] || (raise NlgException.new "tense is nil")
       @pronoun = specifications["pronoun"] || (raise NlgException.new "pronoun is nil")
@@ -19,10 +18,10 @@ module Nlg
   	end
     
     #method to build a sentence. Returns the formed sentece to build_paragraph
-    def build(object)
-      self.value = object["value"]
+    def build(object_type, object_details)
+      self.value = object_details.value
       self.value = value.join(',') if value.is_a?(Array)
-      self.object = object["object"]
+      self.object = object_type
       formed_sentence = self.form
       return formed_sentence
     end

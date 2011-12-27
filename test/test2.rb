@@ -4,7 +4,6 @@ require "nlg"
 
 dataset_json = File.read("json_place.txt")
 dataset = JSON.parse(dataset_json)
-puts dataset
 paragraph = Nlg::Paragraph.new(dataset["subjects"], dataset["defaults"])
 paragraph.build
 paragraph.sentences.each do |sentence|
