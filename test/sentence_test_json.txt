@@ -1,0 +1,28 @@
+{ "defaults":
+  { "tense": "present",
+    "verb": "have",
+    "pronoun": "it", 
+    "voice": "active",
+    "aspect": "habitual",
+    "preposition": "of"
+  },
+
+  "subjects":
+    { 
+      "subject": "Pune",
+      "objects": {
+        "population":{
+          "value": "57841284790",
+          "specifications":
+          {
+   
+          }
+        }
+      
+       
+     }
+    }
+  
+ 
+}
+
