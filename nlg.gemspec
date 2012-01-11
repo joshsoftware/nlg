@@ -5,11 +5,11 @@ require "nlg/version"
 Gem::Specification.new do |s|
   s.name        = "nlg"
   s.version     = Nlg::VERSION
-  s.authors     = ["Sricharan Sunder"]
-  s.email       = ["sricharan92@gmail.com"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.authors     = ["Sricharan Sunder", "Jiren Patel", "Gautam Rege"]
+  s.email       = ["sricharan@joshsoftware.com", "jiren@joshsoftware.com", "gautam@joshsoftware.com"]
+  s.homepage    = "http://github.com/joshsoftware/nlg"
+  s.summary     = %q{Natural Language Generation in Ruby}
+  s.description = %q{Build articles and paragraphs from structured data. Instead of a standard tempate, we can use this to build articles that are grammatically correct and creative.}
 
   s.rubyforge_project = "nlg"
 
