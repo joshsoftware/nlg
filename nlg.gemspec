@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["sricharan@joshsoftware.com", "jiren@joshsoftware.com", "gautam@joshsoftware.com"]
   s.homepage    = "http://github.com/joshsoftware/nlg"
   s.summary     = %q{Natural Language Generation in Ruby}
-  s.description = %q{Build articles and paragraphs from structured data. Instead of a standard tempate, we can use this to build articles that are grammatically correct and creative.}
+  s.description = %q{Build articles and paragraphs from structured data. Instead of a standard template, we can use this to build articles that are grammatically correct and creative.}
 
   s.rubyforge_project = "nlg"
 
