@@ -43,7 +43,7 @@
           "specifications":
           { 
           "complement": "°C" },
-          "conjugated_with": ["high temperature", "low temperature", "rainfall"]
+          "conjugated_with": [ "rainfall"]
         },
       
       
@@ -54,7 +54,7 @@
           {
           "preposition": "named"
           },
-          "conjugated_with": ["high temperature", "low temperature", "rainfall"]
+          "conjugated_with": []
           
         }
      }

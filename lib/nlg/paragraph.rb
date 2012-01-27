@@ -59,9 +59,21 @@ module Nlg
     def build
       puts @conjugations.inspect, @objects.inspect
       # Paragraph generation by generating individual sentences.   
-      @objects.each do |object_type, sentence_object|
-        sentence = Sentence.new(:subject => @subject, :specifications => @defaults.merge(sentence_object.specifications))
-        @sentences << sentence.build(object_type, sentence_object)
+      @conjugations.each do |object_type, conjugated_objects|     # For generating conjugated sentences
+        temporary_sentences = []
+        if @objects.has_key?(object_type)
+          sentence_object = @objects[object_type] 
+          sentence = Sentence.new(:subject => @subject, :specifications => @defaults.merge(sentence_object.specifications))
+          temporary_sentences << sentence.build(object_type, sentence_object)
+        end
+        conjugated_objects.each do |conjugated_object|
+          if @objects.has_key?(conjugated_object)
+            sentence_object = @objects[conjugated_object] 
+            sentence = Sentence.new(:subject => '', :specifications => @defaults.merge(sentence_object.specifications))
+            temporary_sentences << sentence.build(conjugated_object, sentence_object)
+          end
+        end
+        @sentences << temporary_sentences.to_sentence
       end
     end
     
