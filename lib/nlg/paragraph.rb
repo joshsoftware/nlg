@@ -73,7 +73,7 @@ module Nlg
             temporary_sentences << sentence.build(conjugated_object, sentence_object)
           end
         end
-        @sentences << temporary_sentences.to_sentence
+        @sentences << temporary_sentences.to_sentence(:last_word_connector => ' and ')
       end
     end
     

@@ -20,7 +20,7 @@ module Nlg
     #method to build a sentence. Returns the formed sentece to build_paragraph
     def build(object_type, object_details)
       self.value = object_details.value
-      self.value = value.join(',') if value.is_a?(Array)
+      self.value = value.to_sentence(:last_word_connector => ' and ') if value.is_a?(Array)
       self.object = object_type
       formed_sentence = self.form
       return formed_sentence

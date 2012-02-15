@@ -32,7 +32,7 @@
         "high temperature": {
           "value": "45",
           "specifications": {
-         		 "complement": "°C"
+         		 "complement": "\u00B0C"
 		  		},
           "conjugated_with": ["low temperature"]
         },
@@ -42,7 +42,7 @@
           "value": "20",
           "specifications":
           { 
-          "complement": "°C" },
+          "complement": "\u00B0C" },
           "conjugated_with": [ "rainfall"]
         },
       
