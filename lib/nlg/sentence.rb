@@ -14,13 +14,15 @@ module Nlg
       @voice = specifications["voice"]  
       @aspect = specifications["aspect"] || (raise NlgException.new "aspect is nil")
       @preposition = specifications["preposition"]  
+      @conjunction = specifications["conjunction"]  
       @subject = args[:subject] || true
     end
     
     #method to build a sentence. Returns the formed sentece to build_paragraph
     def build(object_type, object_details)
       self.value = object_details.value
-      self.value = value.to_sentence(:last_word_connector => ' and ') if value.is_a?(Array)
+      @value_type = value.class
+      self.value = value.to_sentence(:words_connector => " #{@conjunction} ") if value.is_a?(Array) # connector still remains 'and' 
       self.object = object_type
       formed_sentence = self.form
       return formed_sentence
@@ -43,7 +45,11 @@ module Nlg
     def set_predicate
       predicate = "#{preposition} #{value}"
       if verb == "have"
-        predicate = "#{object} #{preposition} #{value}" 
+        if @value_type.to_s == "Array" # @value_type.is_a?(Array) not acting as expected.
+          predicate = "#{object} #{preposition} #{value}"
+        else
+          predicate = "a #{object} #{preposition} #{value}"
+        end 
       end
       return predicate
     end
